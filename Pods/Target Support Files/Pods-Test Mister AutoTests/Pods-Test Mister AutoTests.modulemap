@@ -1,0 +1,6 @@
+framework module Pods_Test_Mister_AutoTests {
+  umbrella header "Pods-Test Mister AutoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
