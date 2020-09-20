@@ -70,6 +70,9 @@ enum APIRouter: APIConfiguration {
                 components?.queryItems = queryParams
                 urlRequest.url = components?.url
         }
-            return urlRequest
+        if !(NetworkReachabilityManager()?.isReachable ?? false) {
+            urlRequest.cachePolicy = .returnCacheDataDontLoad
+        }
+        return urlRequest
     }
 }
