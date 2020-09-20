@@ -21,9 +21,13 @@ class UsersListViewController: UIViewController {
     }
     
     func loadUsers() {
+        self.startActivityIndicator()
         viewModel.loadUsers { (isSuccess, error) in
+            self.stopActivityIndicator()
             if isSuccess {
                 self.tableView.reloadData()
+            } else if let error = error {
+                self.showError(error: error)
             }
         }
     }
