@@ -12,7 +12,7 @@ import Alamofire
 enum APIRouter: APIConfiguration {
     
     case usersList
-    case tasksList(userId: String)
+    case tasksList(userId: Int)
     
     // MARK: - HTTPMethod
     var method: HTTPMethod {
@@ -28,8 +28,8 @@ enum APIRouter: APIConfiguration {
         switch self {
         case .usersList:
             return .url([:])
-        case .tasksList:
-            return .url([:])
+        case .tasksList(let userId):
+            return .url(["userId": userId])
         }
     }
     
@@ -38,8 +38,8 @@ enum APIRouter: APIConfiguration {
         switch self {
         case .usersList:
             return "/users/"
-        case .tasksList(let userId):
-            return "/todos?userId=\(userId)"
+        case .tasksList:
+            return "/todos"
         }
     }
     
@@ -53,8 +53,8 @@ enum APIRouter: APIConfiguration {
         urlRequest.httpMethod = method.rawValue
         
         // Common Headers
-        urlRequest.setValue(ContentType.formEncode.rawValue, forHTTPHeaderField: HTTPHeaderField.acceptType.rawValue)
-        urlRequest.setValue(ContentType.formEncode.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
+        urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.acceptType.rawValue)
+        urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
         
         // Parameters
         switch parameters {

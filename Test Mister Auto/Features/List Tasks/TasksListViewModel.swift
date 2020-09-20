@@ -7,3 +7,27 @@
 //
 
 import Foundation
+
+class TasksListViewModel {
+    
+    var tasks = [Task]()
+    
+    var selectedUser: User?
+    
+    init(user: User) {
+        self.selectedUser = user
+    }
+    
+    func loadTasks(completion: @escaping (Bool, Error?) -> Void) {
+        guard let userId = selectedUser?.id else {
+            completion(false, nil)
+            return }
+        UserRequest.loadTaskList(userId: userId, success: { tasks in
+            self.tasks = tasks
+            completion(true, nil)
+        }) { error in
+            completion(false, error)
+        }
+        
+    }
+}

@@ -19,18 +19,6 @@ class UsersListViewController: UIViewController {
         setupTableView()
         loadUsers()
     }
-    
-    func loadUsers() {
-        self.startActivityIndicator()
-        viewModel.loadUsers { (isSuccess, error) in
-            self.stopActivityIndicator()
-            if isSuccess {
-                self.tableView.reloadData()
-            } else if let error = error {
-                self.showError(error: error)
-            }
-        }
-    }
 }
 
 extension UsersListViewController {
@@ -40,6 +28,18 @@ extension UsersListViewController {
         self.tableView.tableFooterView = UIView()
         self.tableView.delegate = self
         self.tableView.dataSource =  self
+    }
+    
+    private func loadUsers() {
+        self.startActivityIndicator()
+        viewModel.loadUsers { (isSuccess, error) in
+            self.stopActivityIndicator()
+            if isSuccess {
+                self.tableView.reloadData()
+            } else if let error = error {
+                self.showError(error: error)
+            }
+        }
     }
 }
 

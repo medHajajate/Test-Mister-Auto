@@ -28,6 +28,7 @@
 		47D2D2D1251794EA00B8EBBD /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D2D2D0251794EA00B8EBBD /* APIConfiguration.swift */; };
 		47D2D2D42517966800B8EBBD /* UserAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D2D2D32517966800B8EBBD /* UserAdapter.swift */; };
 		47ED93BA25179FE7000CF55C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED93B925179FE7000CF55C /* UIViewController+Extension.swift */; };
+		47ED93BC2517A116000CF55C /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED93BB2517A116000CF55C /* Task.swift */; };
 		95191FFE9044C8A66E85A22F /* Pods_Test_Mister_AutoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAA32B3EAD3E7B474615C67 /* Pods_Test_Mister_AutoTests.framework */; };
 		FF091EBE5EEC699A42297DC1 /* Pods_Test_Mister_Auto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1662CBB9C7B5467BB027AA46 /* Pods_Test_Mister_Auto.framework */; };
 /* End PBXBuildFile section */
@@ -80,6 +81,7 @@
 		47D2D2D0251794EA00B8EBBD /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
 		47D2D2D32517966800B8EBBD /* UserAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAdapter.swift; sourceTree = "<group>"; };
 		47ED93B925179FE7000CF55C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		47ED93BB2517A116000CF55C /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		5CE65EB08CAC2C857CF3DF54 /* Pods-Test Mister AutoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test Mister AutoTests.release.xcconfig"; path = "Target Support Files/Pods-Test Mister AutoTests/Pods-Test Mister AutoTests.release.xcconfig"; sourceTree = "<group>"; };
 		6EAA32B3EAD3E7B474615C67 /* Pods_Test_Mister_AutoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_Mister_AutoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AECB954209CF0E4034767B4 /* Pods-Test Mister Auto-Test Mister AutoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test Mister Auto-Test Mister AutoUITests.release.xcconfig"; path = "Target Support Files/Pods-Test Mister Auto-Test Mister AutoUITests/Pods-Test Mister Auto-Test Mister AutoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				47D2D2C5251769FB00B8EBBD /* User.swift */,
+				47ED93BB2517A116000CF55C /* Task.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -539,6 +542,7 @@
 				47ED93BA25179FE7000CF55C /* UIViewController+Extension.swift in Sources */,
 				47D2D2D1251794EA00B8EBBD /* APIConfiguration.swift in Sources */,
 				47D2D27F25164B6C00B8EBBD /* AppDelegate.swift in Sources */,
+				47ED93BC2517A116000CF55C /* Task.swift in Sources */,
 				47D2D2BE2516C6BE00B8EBBD /* UserTableViewCell.swift in Sources */,
 				47D2D2C6251769FB00B8EBBD /* User.swift in Sources */,
 				47D2D2CF2517947300B8EBBD /* APIRouter.swift in Sources */,

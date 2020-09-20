@@ -10,8 +10,8 @@ import UIKit
 
 class UserTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var mailLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subTitleLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,8 +25,13 @@ class UserTableViewCell: UITableViewCell {
     }
     
     func update(with user: User)  {
-        self.nameLabel.text = user.name
-        self.mailLabel.text = user.email
+        self.titleLabel.text = user.name
+        self.subTitleLabel.text = user.email
     }
     
+    func update(with task: Task) {
+        self.titleLabel.text = task.title
+        self.subTitleLabel.text = task.completed ? "completed" : " not completed"
+        self.subTitleLabel.textColor = task.completed ? .green : .red
+    }
 }
