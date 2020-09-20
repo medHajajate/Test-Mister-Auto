@@ -9,7 +9,7 @@ target 'Test Mister Auto' do
 
   # Alamofire
   pod 'Alamofire'
-
+  
   target 'Test Mister AutoTests' do
     inherit! :search_paths
     # Pods for testing

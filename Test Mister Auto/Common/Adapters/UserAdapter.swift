@@ -7,3 +7,22 @@
 //
 
 import Foundation
+import Alamofire
+
+class UserRequest {
+    
+    
+    static func loadUserList(success: @escaping ([User]) -> Void, failure: @escaping (Error) -> Void){
+        AF.request(APIRouter.usersList)
+        .responseDecodable(of: [User].self, completionHandler: { response in
+                switch response.result {
+                case .success(let response):
+                    success(response)
+                case .failure(let error):
+                    print(error)
+                    failure(error)
+                    break
+                }
+        })
+    }
+}

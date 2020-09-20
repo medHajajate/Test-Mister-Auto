@@ -27,9 +27,9 @@ enum APIRouter: APIConfiguration {
      var parameters: RequestParams {
         switch self {
         case .usersList:
-            return .body([:])
+            return .url([:])
         case .tasksList:
-            return .body([:])
+            return .url([:])
         }
     }
     
@@ -53,8 +53,8 @@ enum APIRouter: APIConfiguration {
         urlRequest.httpMethod = method.rawValue
         
         // Common Headers
-        urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.acceptType.rawValue)
-        urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
+        urlRequest.setValue(ContentType.formEncode.rawValue, forHTTPHeaderField: HTTPHeaderField.acceptType.rawValue)
+        urlRequest.setValue(ContentType.formEncode.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
         
         // Parameters
         switch parameters {

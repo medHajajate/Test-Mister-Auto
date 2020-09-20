@@ -7,3 +7,20 @@
 //
 
 import Foundation
+
+class UsersListViewModel {
+    
+    var userList = [User]()
+    
+    init() {}
+    
+    func loadUsers(completion: @escaping (Bool, Error?) -> Void) {
+        UserRequest.loadUserList(success: { users in
+            self.userList = users
+            completion(true, nil)
+        }) { error in
+            completion(false, error)
+        }
+        
+    }
+}

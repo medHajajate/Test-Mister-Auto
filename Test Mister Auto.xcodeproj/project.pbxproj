@@ -3,19 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		30E7D3D6826E5CD5C30B27CD /* Pods_Test_Mister_Auto_Test_Mister_AutoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38FA01E9041E612551A044AB /* Pods_Test_Mister_Auto_Test_Mister_AutoUITests.framework */; };
 		47D2D27F25164B6C00B8EBBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D2D27E25164B6C00B8EBBD /* AppDelegate.swift */; };
 		47D2D28125164B6C00B8EBBD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D2D28025164B6C00B8EBBD /* SceneDelegate.swift */; };
-		47D2D28325164B6C00B8EBBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D2D28225164B6C00B8EBBD /* ViewController.swift */; };
 		47D2D28625164B6C00B8EBBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D2D28425164B6C00B8EBBD /* Main.storyboard */; };
 		47D2D28825164B6E00B8EBBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47D2D28725164B6E00B8EBBD /* Assets.xcassets */; };
 		47D2D28B25164B6E00B8EBBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D2D28925164B6E00B8EBBD /* LaunchScreen.storyboard */; };
 		47D2D29625164B6F00B8EBBD /* Test_Mister_AutoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D2D29525164B6F00B8EBBD /* Test_Mister_AutoTests.swift */; };
 		47D2D2A125164B6F00B8EBBD /* Test_Mister_AutoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D2D2A025164B6F00B8EBBD /* Test_Mister_AutoUITests.swift */; };
+		47D2D2B42516518E00B8EBBD /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D2D2B32516518E00B8EBBD /* UsersListViewController.swift */; };
+		47D2D2B6251651A000B8EBBD /* TasksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D2D2B5251651A000B8EBBD /* TasksListViewController.swift */; };
+		47D2D2B8251651E800B8EBBD /* TasksListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D2D2B7251651E800B8EBBD /* TasksListViewModel.swift */; };
+		47D2D2BA251651FA00B8EBBD /* UsersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D2D2B9251651FA00B8EBBD /* UsersListViewModel.swift */; };
+		47D2D2BE2516C6BE00B8EBBD /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D2D2BC2516C6BE00B8EBBD /* UserTableViewCell.swift */; };
+		47D2D2BF2516C6BE00B8EBBD /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47D2D2BD2516C6BE00B8EBBD /* UserTableViewCell.xib */; };
+		47D2D2C32516CA7900B8EBBD /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D2D2C22516CA7900B8EBBD /* UIView+Extension.swift */; };
+		47D2D2C6251769FB00B8EBBD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D2D2C5251769FB00B8EBBD /* User.swift */; };
+		47D2D2CD2517945B00B8EBBD /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D2D2CC2517945B00B8EBBD /* APIConstants.swift */; };
+		47D2D2CF2517947300B8EBBD /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D2D2CE2517947300B8EBBD /* APIRouter.swift */; };
+		47D2D2D1251794EA00B8EBBD /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D2D2D0251794EA00B8EBBD /* APIConfiguration.swift */; };
+		47D2D2D42517966800B8EBBD /* UserAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D2D2D32517966800B8EBBD /* UserAdapter.swift */; };
 		95191FFE9044C8A66E85A22F /* Pods_Test_Mister_AutoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAA32B3EAD3E7B474615C67 /* Pods_Test_Mister_AutoTests.framework */; };
 		FF091EBE5EEC699A42297DC1 /* Pods_Test_Mister_Auto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1662CBB9C7B5467BB027AA46 /* Pods_Test_Mister_Auto.framework */; };
 /* End PBXBuildFile section */
@@ -45,7 +56,6 @@
 		47D2D27B25164B6C00B8EBBD /* Test Mister Auto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Mister Auto.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D2D27E25164B6C00B8EBBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47D2D28025164B6C00B8EBBD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		47D2D28225164B6C00B8EBBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		47D2D28525164B6C00B8EBBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47D2D28725164B6E00B8EBBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47D2D28A25164B6E00B8EBBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +66,18 @@
 		47D2D29C25164B6F00B8EBBD /* Test Mister AutoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test Mister AutoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D2D2A025164B6F00B8EBBD /* Test_Mister_AutoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_Mister_AutoUITests.swift; sourceTree = "<group>"; };
 		47D2D2A225164B6F00B8EBBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47D2D2B32516518E00B8EBBD /* UsersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewController.swift; sourceTree = "<group>"; };
+		47D2D2B5251651A000B8EBBD /* TasksListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListViewController.swift; sourceTree = "<group>"; };
+		47D2D2B7251651E800B8EBBD /* TasksListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListViewModel.swift; sourceTree = "<group>"; };
+		47D2D2B9251651FA00B8EBBD /* UsersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewModel.swift; sourceTree = "<group>"; };
+		47D2D2BC2516C6BE00B8EBBD /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		47D2D2BD2516C6BE00B8EBBD /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		47D2D2C22516CA7900B8EBBD /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		47D2D2C5251769FB00B8EBBD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		47D2D2CC2517945B00B8EBBD /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		47D2D2CE2517947300B8EBBD /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		47D2D2D0251794EA00B8EBBD /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		47D2D2D32517966800B8EBBD /* UserAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAdapter.swift; sourceTree = "<group>"; };
 		5CE65EB08CAC2C857CF3DF54 /* Pods-Test Mister AutoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test Mister AutoTests.release.xcconfig"; path = "Target Support Files/Pods-Test Mister AutoTests/Pods-Test Mister AutoTests.release.xcconfig"; sourceTree = "<group>"; };
 		6EAA32B3EAD3E7B474615C67 /* Pods_Test_Mister_AutoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_Mister_AutoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AECB954209CF0E4034767B4 /* Pods-Test Mister Auto-Test Mister AutoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test Mister Auto-Test Mister AutoUITests.release.xcconfig"; path = "Target Support Files/Pods-Test Mister Auto-Test Mister AutoUITests/Pods-Test Mister Auto-Test Mister AutoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,10 +138,11 @@
 		47D2D27D25164B6C00B8EBBD /* Test Mister Auto */ = {
 			isa = PBXGroup;
 			children = (
+				47D2D2C4251769F200B8EBBD /* Model */,
+				47D2D2C02516CA4600B8EBBD /* Common */,
 				47D2D2B025164C8200B8EBBD /* AppDelegate */,
 				47D2D2AF25164C6800B8EBBD /* Supporting Files */,
 				47D2D2AE25164C5600B8EBBD /* Features */,
-				47D2D28225164B6C00B8EBBD /* ViewController.swift */,
 			);
 			path = "Test Mister Auto";
 			sourceTree = "<group>";
@@ -145,6 +168,8 @@
 		47D2D2AE25164C5600B8EBBD /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				47D2D2B22516515D00B8EBBD /* List Tasks */,
+				47D2D2B12516513F00B8EBBD /* List Users */,
 				47D2D28425164B6C00B8EBBD /* Main.storyboard */,
 			);
 			path = Features;
@@ -169,6 +194,78 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
+		47D2D2B12516513F00B8EBBD /* List Users */ = {
+			isa = PBXGroup;
+			children = (
+				47D2D2BB2516C6A400B8EBBD /* New Group */,
+				47D2D2B32516518E00B8EBBD /* UsersListViewController.swift */,
+				47D2D2B9251651FA00B8EBBD /* UsersListViewModel.swift */,
+			);
+			path = "List Users";
+			sourceTree = "<group>";
+		};
+		47D2D2B22516515D00B8EBBD /* List Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				47D2D2B5251651A000B8EBBD /* TasksListViewController.swift */,
+				47D2D2B7251651E800B8EBBD /* TasksListViewModel.swift */,
+			);
+			path = "List Tasks";
+			sourceTree = "<group>";
+		};
+		47D2D2BB2516C6A400B8EBBD /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				47D2D2BC2516C6BE00B8EBBD /* UserTableViewCell.swift */,
+				47D2D2BD2516C6BE00B8EBBD /* UserTableViewCell.xib */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		47D2D2C02516CA4600B8EBBD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				47D2D2D2251795D400B8EBBD /* Adapters */,
+				47D2D2C7251791C500B8EBBD /* Network Layer */,
+				47D2D2C12516CA5100B8EBBD /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		47D2D2C12516CA5100B8EBBD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				47D2D2C22516CA7900B8EBBD /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		47D2D2C4251769F200B8EBBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47D2D2C5251769FB00B8EBBD /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		47D2D2C7251791C500B8EBBD /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				47D2D2CC2517945B00B8EBBD /* APIConstants.swift */,
+				47D2D2CE2517947300B8EBBD /* APIRouter.swift */,
+				47D2D2D0251794EA00B8EBBD /* APIConfiguration.swift */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		47D2D2D2251795D400B8EBBD /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				47D2D2D32517966800B8EBBD /* UserAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
 		662F5B926A96619FBECA5E69 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,7 +286,6 @@
 				E7B7CAB991F59C9DB87055C8 /* Pods-Test Mister AutoTests.debug.xcconfig */,
 				5CE65EB08CAC2C857CF3DF54 /* Pods-Test Mister AutoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -302,6 +398,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47D2D2BF2516C6BE00B8EBBD /* UserTableViewCell.xib in Resources */,
 				47D2D28B25164B6E00B8EBBD /* LaunchScreen.storyboard in Resources */,
 				47D2D28825164B6E00B8EBBD /* Assets.xcassets in Resources */,
 				47D2D28625164B6C00B8EBBD /* Main.storyboard in Resources */,
@@ -432,9 +529,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47D2D28325164B6C00B8EBBD /* ViewController.swift in Sources */,
+				47D2D2B42516518E00B8EBBD /* UsersListViewController.swift in Sources */,
+				47D2D2B6251651A000B8EBBD /* TasksListViewController.swift in Sources */,
+				47D2D2C32516CA7900B8EBBD /* UIView+Extension.swift in Sources */,
+				47D2D2D42517966800B8EBBD /* UserAdapter.swift in Sources */,
+				47D2D2D1251794EA00B8EBBD /* APIConfiguration.swift in Sources */,
 				47D2D27F25164B6C00B8EBBD /* AppDelegate.swift in Sources */,
+				47D2D2BE2516C6BE00B8EBBD /* UserTableViewCell.swift in Sources */,
+				47D2D2C6251769FB00B8EBBD /* User.swift in Sources */,
+				47D2D2CF2517947300B8EBBD /* APIRouter.swift in Sources */,
+				47D2D2CD2517945B00B8EBBD /* APIConstants.swift in Sources */,
+				47D2D2BA251651FA00B8EBBD /* UsersListViewModel.swift in Sources */,
 				47D2D28125164B6C00B8EBBD /* SceneDelegate.swift in Sources */,
+				47D2D2B8251651E800B8EBBD /* TasksListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

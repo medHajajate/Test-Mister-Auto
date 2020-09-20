@@ -9,6 +9,9 @@
 import UIKit
 
 class UserTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var mailLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,6 +22,11 @@ class UserTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func update(with user: User)  {
+        self.nameLabel.text = user.name
+        self.mailLabel.text = user.email
     }
     
 }
