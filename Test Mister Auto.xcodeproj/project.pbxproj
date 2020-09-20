@@ -29,6 +29,7 @@
 		47D2D2D42517966800B8EBBD /* UserAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D2D2D32517966800B8EBBD /* UserAdapter.swift */; };
 		47ED93BA25179FE7000CF55C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED93B925179FE7000CF55C /* UIViewController+Extension.swift */; };
 		47ED93BC2517A116000CF55C /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED93BB2517A116000CF55C /* Task.swift */; };
+		47ED93BE2517B810000CF55C /* UserRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED93BD2517B810000CF55C /* UserRequestTest.swift */; };
 		95191FFE9044C8A66E85A22F /* Pods_Test_Mister_AutoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAA32B3EAD3E7B474615C67 /* Pods_Test_Mister_AutoTests.framework */; };
 		FF091EBE5EEC699A42297DC1 /* Pods_Test_Mister_Auto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1662CBB9C7B5467BB027AA46 /* Pods_Test_Mister_Auto.framework */; };
 /* End PBXBuildFile section */
@@ -55,7 +56,7 @@
 		16C5688461BA45CA8B22A574 /* Pods-Test Mister Auto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test Mister Auto.debug.xcconfig"; path = "Target Support Files/Pods-Test Mister Auto/Pods-Test Mister Auto.debug.xcconfig"; sourceTree = "<group>"; };
 		38FA01E9041E612551A044AB /* Pods_Test_Mister_Auto_Test_Mister_AutoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_Mister_Auto_Test_Mister_AutoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E5A38090FCB0B8892286F00 /* Pods-Test Mister Auto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test Mister Auto.release.xcconfig"; path = "Target Support Files/Pods-Test Mister Auto/Pods-Test Mister Auto.release.xcconfig"; sourceTree = "<group>"; };
-		47D2D27B25164B6C00B8EBBD /* Test Mister Auto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Mister Auto.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D2D27B25164B6C00B8EBBD /* TODO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TODO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D2D27E25164B6C00B8EBBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47D2D28025164B6C00B8EBBD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		47D2D28525164B6C00B8EBBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,6 +83,7 @@
 		47D2D2D32517966800B8EBBD /* UserAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAdapter.swift; sourceTree = "<group>"; };
 		47ED93B925179FE7000CF55C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		47ED93BB2517A116000CF55C /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		47ED93BD2517B810000CF55C /* UserRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequestTest.swift; sourceTree = "<group>"; };
 		5CE65EB08CAC2C857CF3DF54 /* Pods-Test Mister AutoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test Mister AutoTests.release.xcconfig"; path = "Target Support Files/Pods-Test Mister AutoTests/Pods-Test Mister AutoTests.release.xcconfig"; sourceTree = "<group>"; };
 		6EAA32B3EAD3E7B474615C67 /* Pods_Test_Mister_AutoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_Mister_AutoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AECB954209CF0E4034767B4 /* Pods-Test Mister Auto-Test Mister AutoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test Mister Auto-Test Mister AutoUITests.release.xcconfig"; path = "Target Support Files/Pods-Test Mister Auto-Test Mister AutoUITests/Pods-Test Mister Auto-Test Mister AutoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,7 +134,7 @@
 		47D2D27C25164B6C00B8EBBD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				47D2D27B25164B6C00B8EBBD /* Test Mister Auto.app */,
+				47D2D27B25164B6C00B8EBBD /* TODO.app */,
 				47D2D29125164B6F00B8EBBD /* Test Mister AutoTests.xctest */,
 				47D2D29C25164B6F00B8EBBD /* Test Mister AutoUITests.xctest */,
 			);
@@ -156,6 +158,7 @@
 			children = (
 				47D2D29525164B6F00B8EBBD /* Test_Mister_AutoTests.swift */,
 				47D2D29725164B6F00B8EBBD /* Info.plist */,
+				47ED93BD2517B810000CF55C /* UserRequestTest.swift */,
 			);
 			path = "Test Mister AutoTests";
 			sourceTree = "<group>";
@@ -314,7 +317,7 @@
 			);
 			name = "Test Mister Auto";
 			productName = "Test Mister Auto";
-			productReference = 47D2D27B25164B6C00B8EBBD /* Test Mister Auto.app */;
+			productReference = 47D2D27B25164B6C00B8EBBD /* TODO.app */;
 			productType = "com.apple.product-type.application";
 		};
 		47D2D29025164B6F00B8EBBD /* Test Mister AutoTests */ = {
@@ -557,6 +560,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47ED93BE2517B810000CF55C /* UserRequestTest.swift in Sources */,
 				47D2D29625164B6F00B8EBBD /* Test_Mister_AutoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -730,7 +734,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "hajajate.Test-Mister-Auto";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TODO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -748,7 +752,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "hajajate.Test-Mister-Auto";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TODO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

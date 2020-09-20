@@ -11,29 +11,29 @@ dernière est complétée ou pas.
 
 # API :
 • Liste d’utilisateur : https://jsonplaceholder.typicode.com/users/
+
 • Liste des tâches par utilisateur : https://jsonplaceholder.typicode.com/todos?userId=%d 
 
-# Screenshots
 
 ## How to build
 
 1) Clone the repository
 
 ```bash
-$ git clone https://github.com/medHajajate/Weather-Forecast.git
+$ git clone https://github.com/medHajajate/Test-Mister-Auto.git
 ```
 
 2) Install pods
 
 ```bash
-$ cd Weather\ Forecast/
+$ cd Test\ Mister\ Auto/
 $ pod install
 ```
 
 3) Open the workspace in Xcode
 
 ```bash
-$ open "Weather-Forecast.xcworkspace"
+$ open "Test\ Mister\ Auto.xcworkspace"
 ```
  
 4) Compile and run the app in your simulator
